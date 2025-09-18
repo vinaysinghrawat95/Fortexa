@@ -14,29 +14,19 @@ header {
     height: 6rem;
     width: 100%;
     padding: 0 76px;
-
 }
 
-.left {
+header .left {
     display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-    height: 60px;
-    width: 20%;
-    padding: 0 30px;
+    align-items: center;
+    gap: 10px;
 }
 
-.left img {
-    width: 50px;
-    height: 42px;
+header .left img {
+    height: 40px;
 }
 
-/* .logo {
-    padding-left: 62px;
-
-} */
-
-.companyName h1 {
+.left h1 {
     font-size: 3rem;
     font-family: "Jaro", sans-serif;
     font-optical-sizing: auto;
@@ -50,32 +40,16 @@ header {
 
 
 .right {
-    height: 64px;
-    width: 20%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding-top: 6px;
+    gap: 10px;
 }
 
-.signIn {
-    height: 42px;
-    width: 110px;
+.right button{
     border: 2px solid rgb(255, 255, 255);
-    border-radius: 14px;
+    border-radius: 10px;
     outline: none;
-    color: whitesmoke;
-    font-weight: 600;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.signUp {
-    height: 42px;
-    width: 110px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 14px;
-    outline: none;
+    padding: 10px 30px;
     color: whitesmoke;
     font-weight: 600;
     background-color: transparent;
@@ -83,54 +57,64 @@ header {
 }
 
 main {
-    font-family: "Jaro", sans-serif;
-    font-optical-sizing: auto;
     background-color: #000000;
     color: white;
+    background-color: #00d9ff;
+    height: 80vh;
 }
 
 
 .Hero-section {
+    height: 93%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 115px;
+    background-color: aquamarine;
+}
 
+.inner-right-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    min-width: 373px;
+    height: 90%;
+    width: 60%;
 }
 
 .inner-right-image img {
-    /* width: 550px;
-    height: 500px; */
-    max-width: 100%;
-    height: auto;
-    margin: 15px 0;
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
 }
 
-.main-text h1 {
-    font-size: 6rem;
-    font-weight: 300;
-}
-
-.description {
-    height: 150px;
+.main-inner{
+    display: flex;
+    flex-direction: column;
     width: 300px;
 }
 
-.description p {
-    font-size: 2rem;
+.main-inner h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    font-family: "Jaro", sans-serif;
+}
+
+.main-inner p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
 }
 
 .hero-btn {
     display: flex;
     justify-content: space-between;
-    height: 60px;
-    width: 300px;
+    width: 280px;
     align-items: center;
 }
 
 .hero-btn button {
-    height: 40px;
-    width: 140px;
+    width: 130px;
     outline: none;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 14px;
@@ -139,6 +123,7 @@ main {
     background-color: transparent;
     color: white;
     cursor: pointer;
+    padding: 10px 0;
 }
 
 .fact{
@@ -264,4 +249,16 @@ button:hover {
     height: 26px;
     width: 26px;
     margin: 0 4px;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 0 10px;
+        background-color: red   ;
+    }
+
+    .Hero-section {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
