@@ -57,9 +57,9 @@ header .left img {
 }
 
 main {
+
     background-color: #000000;
     color: white;
-    background-color: #00d9ff;
     height: 80vh;
 }
 
@@ -70,7 +70,6 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 0 115px;
-    background-color: aquamarine;
 }
 
 .inner-right-image{
@@ -89,13 +88,13 @@ main {
    object-fit: contain;
 }
 
-.main-inner{
+.inner-left-text{
     display: flex;
     flex-direction: column;
     width: 300px;
 }
 
-.main-inner h1 {
+.main-text h1 {
     font-size: 6rem;
     font-weight: 300;
     font-family: "Jaro", sans-serif;
@@ -245,10 +244,9 @@ button:hover {
     color: white;
 }
 
-.end-footer img {
-    height: 26px;
-    width: 26px;
-    margin: 0 4px;
+.end-footer div:last-child{
+    display: flex;
+    gap: 4px ;
 }
 
 @media screen and (max-width: 768px) {
